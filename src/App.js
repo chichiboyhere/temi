@@ -25,7 +25,7 @@ function App() {
         localStorage.removeItem("cartItems");
         localStorage.removeItem("shippingAddress");
         localStorage.removeItem("paymentMethod");
-        window.location.href = "/signin";
+        window.location.href = "/";
     };
     const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
     const { data: categories, isLoading, error } = useGetCategoriesQuery();
